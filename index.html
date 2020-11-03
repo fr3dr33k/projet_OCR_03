@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    
+    <head>
+        <title>Lyon VeLO'V</title>
+        <meta charset="utf-8">
+        <meta lang="fr">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+              integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+              crossorigin=""/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        <script src="js/conteneurDescription.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/p3Desktop.css">
+        <link rel="stylesheet" href="css/p3Tablet.css">
+        <link rel="stylesheet" href="css/p3Phone.css">
+        <link rel="stylesheet" href="css/p3XsPhone.css">
+        <script src="js/mapScripts/ajax.js"></script>
+        <script type="application/javascript">
+            ajaxGet('https://api.ipify.org?format=json', function (data) {
+                var callback = JSON.parse(data);
+                var ip = callback.ip;
+                console.log(ip);
+            })
+        </script>
+    </head>
+
+    <body>
+
+        <header id="conteneurHeader">
+            <p><img class="gifHeader" src="img/p3Gif.gif" alt="gif-bd-velo"></p>
+            <a href="#"><h1>LYON VE<span>LO'V</span></h1></a>
+        </header>
+
+        <section id="conteneurSlider">      // --- slider.js est le fichier se chargeant du fonctionnement du diapo
+            <img src="" id="slide" alt="slider-velov">
+            <button class="fas fa-chevron-circle-left" id="left"></button>
+            <button class="fas fa-chevron-circle-right" id="right"></button>
+            <button class="far fa-pause-circle" id="pause"></button>
+            <button class="far fa-play-circle" id="play"></button>
+        </section>
+
+        <section id="conteneurDescription">
+            <script type="application/javascript">
+                displayDescription();
+            </script>
+        </section>
+
+        <div id="conteneurMap">
+            <div id="map"></div>
+        </div>
+
+        <footer id="footer" style="width: 100%; font-size: 2em; color: #888888; text-align: center; padding: 1em;">
+
+        </footer>
+
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+                integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+                crossorigin=""></script>
+        <script src="js/mapScripts/ajax.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/reservationScripts/reservation.js"></script>
+        <script src="js/reservationScripts/canvas.js"></script>
+        <script src="js/mapScripts/map.js"></script>
+        <script src="js/reservationScripts/divSigned.js"></script>
+        <script src="js/reservationScripts/divClickContent.js"></script>
+        <script src="js/reservationScripts/divClick.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    
+</html>
+
+
+

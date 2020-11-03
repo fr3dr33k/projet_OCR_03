@@ -1,0 +1,12 @@
+@media screen and (max-width : 300px) {
+
+    #submit1{
+        margin-top: 0;
+    }
+
+    #divClick{
+        min-width: 250px;
+    }
+
+
+}

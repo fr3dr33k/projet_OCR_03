@@ -1,0 +1,9 @@
+//-- Icons description --//
+
+let IconsDescription = {
+
+
+
+
+
+}

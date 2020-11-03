@@ -1,0 +1,390 @@
+/********** CSS ************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: rgb(242, 242, 242);
+    width: 75%;
+    margin: auto;
+    background: #5294bd;
+    background: linear-gradient(180deg,#5294bd 75%, #ffffff 100%);
+    background: -webkit-linear-gradient(180deg,#5294bd 75%, #ffffff 100%);
+    background: -moz-linear-gradient(180deg,#5294bd 75%, #ffffff 100%);
+}
+
+/* HEADER */
+
+#conteneurHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
+#containerHd{
+    position: absolute;
+    left: 9em;
+}
+
+header a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Righteous', sans-serif;
+    font-size: 3em;
+    max-width: 400px;
+    color: rgb(242, 242, 242);
+    padding: 0;
+    text-decoration: overline;
+    margin: auto;
+}
+
+h1:hover span{
+    color: rgba(231, 39, 39, 0.733);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#conteneurHeader p{
+    width: 15%;
+}
+
+.gifHeader{
+    width: 100%;
+}
+
+/* FIN HEADER */
+
+/* SLIDER */
+
+#conteneurSlider{
+    position: relative;
+    display: flex;
+    width: 90%;
+    min-width: 350px;
+    height: 600px;
+    min-height: 250px;
+    overflow: hidden;
+    border: 5px solid;
+    margin: auto auto 4em;
+    border-radius: 1em;
+}
+
+#slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#overSlideExplain{
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: normal;
+    color: oldlace;
+    background-color: rgba(82,148,189 , 0.9);
+    padding: 0.5em;
+    position: absolute;
+    margin: 0.5em;
+}
+
+#overSlideExplainText{
+
+}
+
+#left , #right{
+    position: absolute;
+    font-size: xx-large;
+    border-radius: 100%;
+    color: white;
+    background-color: rgb(82,148,189);
+    border-color: rgb(82,148,189);
+}
+
+#left:hover , #right:hover{
+    opacity: 0.9;
+}
+
+#left{
+    position: absolute;
+    top: 47%;
+}
+
+#right{
+    position: absolute;
+    top: 47%;
+    right: 0;
+}
+
+#pause{
+    position: absolute;
+    z-index: 99;
+    color: rgb(255,255,255);
+    font-size: 2.5em;
+    top: 80%;
+    left: 5%;
+    border: 2px solid rgb(82,148,189);
+    border-radius: 100%;
+    background: rgb(82,148,189);
+}
+
+#pause:hover{
+    opacity: 0.7;
+}
+
+#play{
+    position: absolute;
+    z-index: 99;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    top: 80%;
+    right: 5%;
+    border: 2px solid rgb(82,148,189);
+    border-radius: 100%;
+    background: rgb(82,148,189);
+}
+
+#play:hover{
+    opacity: 0.5;
+}
+
+/* DESCRIPTION SERVICE */
+
+#conteneurDescription{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    border: 5px solid whitesmoke;
+    background-color: rgba(15, 15, 7, 0.5);
+    margin: 5% auto;
+    height: auto;
+    min-height: 550px;
+    padding-bottom: 5%;
+}
+
+#containHowUse{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+#imgContainHowUse{
+    width: 40%;
+    height: 50%;
+    margin: auto;
+}
+
+#imgContainHowUse img{
+    width: 100%;
+    right: 5em;
+    bottom: 3em;
+}
+
+#txtContain{
+    padding: 1em;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+#conteneurDescription h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+}
+
+/* MAP API_GOOGLE */
+
+#conteneurMap{
+    width: 90%;
+    display: flex;
+    min-height: 600px;
+    margin: auto auto 4em;
+}
+
+#map{
+    width: 100%;
+    max-width: 1700px;
+    min-height: 550px;
+}
+
+/* DIV CLICK */
+
+#divClick{
+    position: relative;
+    width: 70%;
+    height: 700px;
+    max-width: 650px;
+    min-height: 650px;
+    background-color: white;
+    font-family: Righteous, sans-serif;
+    font-weight: normal;
+    color: #5294BD;
+    border: 3px solid rgba(251, 0, 0, 0.5);
+    margin-left: 5%;
+}
+
+#h1 p{
+    text-align: center;
+    font-size: 1.5em;
+    color: #cc0000;
+    opacity: 0.51;
+}
+
+#titleDivClick{
+    text-align: center;
+    font-size: 2em;
+    color: #cc0000;
+    opacity: 0.51;
+    padding: 0.5em;
+}
+
+#adrssNumbTitle{
+    font-size: 1.3em;
+    padding: 0.6em;
+    max-height: 130px;
+}
+
+#dispoBikeTitle{
+    font-size: 1.3em;
+    padding: 0.6em;
+
+}
+
+#adrssNumb , #veloDispo{
+    font-size: 0.7em;
+    color: #cc0000;
+    padding: 0.5em;
+    opacity: 0.5;
+    font-style: normal;
+}
+
+#labelName{
+    position: absolute;
+    bottom: 9.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+#labelFirstN{
+    position: absolute;
+    bottom: 4em;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+#inputName , #inputFirstN{
+    margin: 1em 1em 0.7em;
+}
+
+#submit{
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    padding: 0.4em;
+    background-color: #5294BD;
+    font-family: Righteous, sans-serif;
+    font-size: 1em;
+    color: #e6e6e6;
+    border-radius: 10%;
+    font-style: normal;
+}
+
+#canvasDiv{
+    color: #5294BD;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+#canvas{
+    border: 5px solid lightcoral;
+    opacity: 0.6;
+    color: #5294BD;
+    cursor: crosshair;
+    margin-top: -1em;
+}
+
+#submit1{
+    padding: 0.5em;
+    background-color: #5294BD;
+    font-family: Righteous, sans-serif;
+    font-size: 1em;
+    color: #e6e6e6;
+    border-radius: 10%;
+    font-style: normal;
+}
+
+#clear{
+    color: #cc0000;
+    opacity: 0.51;
+    margin: 5%;
+}
+
+#unavailabl{
+    top: 40%;
+    font-size: 1.2em;
+    background-color: black;
+    opacity: 0.5;
+    padding: 0.3em;
+    border: 0.5em solid orangered;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#divSigned{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    min-width: 300px;
+    max-width: 1050px;
+    max-height: 180px;
+    background-color: white;
+    border: 3px solid rgba(204,0,0,0.5);
+    margin: auto auto 5%;
+    padding: 1em;
+    color: #5294BD;
+}
+
+#divSignedText{
+    text-align: center;
+    font-size: 1.1em;
+    color: #5294BD;
+}
+
+#divSignedTextInfo{
+    font-size: 1.2em;
+    color: #cc0000;
+    opacity: 0.7;
+}
+
+#paraName{
+    font-size: 1.35em;
+    color: #cc0000;
+    padding: 0 0.5em;
+    opacity: 0.7;
+    text-align: center;
+}
+
+#paraName1{
+    font-size: 1.35em;
+    color: rgb(82,148,189);
+    padding: 0 0.5em;
+}
+
+#counter{
+    margin: auto;
+    position: absolute;
+    max-width: 200px;
+    min-height: 50px;
+    max-height: 70px;
+    color: #cc0000;
+}
